@@ -9,7 +9,10 @@ export default async function Home() {
   return (
     <section>
       <Profile />
-      <FeaturedPosts posts={posts.filter((post) => post.featured === true)} />
+      <div className="mt-12">
+        <FeaturedPosts posts={posts.filter((post) => post.featured === true)} />
+      </div>
+
       <div className="mt-12">
         <LikePostsWithCarousel posts={posts} />
       </div>
