@@ -1,5 +1,5 @@
 import path from "path";
-import { promises as fs } from "fs";
+import fs, { promises } from "fs";
 
 export type Post = {
   title: string;
@@ -12,7 +12,7 @@ export type Post = {
 
 export async function getPosts(): Promise<Post[]> {
   const filePath = path.join(process.cwd(), "data", "posts.json");
-  const data = await fs.readFile(filePath, "utf-8");
+  const data = await promises.readFile(filePath, "utf-8");
   return JSON.parse(data);
 }
 
@@ -22,7 +22,9 @@ export async function getFeaturedPosts(): Promise<Post[]> {
   return posts;
 }
 
-// export async function getProduct(id: string): Promise<Product | undefined> {
-//   const products = await getProducts();
-//   return products.find((item) => item.id === id);
-// }
+export function getPost(postId: string) {
+  const postPath = path.join(process.cwd(), "data", "posts", `${postId}.md`);
+  const fileContents = fs.readFileSync(postPath, "utf8");
+
+  return fileContents;
+}
