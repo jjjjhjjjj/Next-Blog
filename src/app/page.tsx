@@ -1,5 +1,5 @@
 import FeaturedPosts from "@/components/FeaturedPosts";
-import LikePostsWithCarousel from "@/components/LikePostsWithCarousel";
+import LikePosts from "@/components/LikePosts";
 import Profile from "@/components/Profile";
 import { getPosts } from "@/service/posts";
 
@@ -14,7 +14,7 @@ export default async function Home() {
       </div>
 
       <div className="mt-12">
-        <LikePostsWithCarousel posts={posts} />
+        <LikePosts posts={posts} />
       </div>
     </section>
   );

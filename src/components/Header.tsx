@@ -10,7 +10,7 @@ export default function Header() {
       </h1>
       <nav className="text-xl">
         {pages.map((page) => (
-          <Link href={`/${page}`} className="px-2">
+          <Link href={page === "home" ? "/" : `/${page}`} className="px-2">
             {page}
           </Link>
         ))}

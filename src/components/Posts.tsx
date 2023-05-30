@@ -7,9 +7,11 @@ type Props = {
 
 export default function Posts({ posts }: Props) {
   return (
-    <ul className="w-4/5 grid grid-cols-3 gap-5">
+    <ul className="grid grid-cols-3 gap-5">
       {posts.map((post) => (
-        <PostItem key={post.path} post={post} />
+        <li key={post.path}>
+          <PostItem post={post} />
+        </li>
       ))}
     </ul>
   );

@@ -1,8 +1,8 @@
-import Header from "@/components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const sans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "My Blog",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} py-5 px-14`}>
+      <body className={`${sans.className} py-5 px-14`}>
         <Header />
         <section>{children}</section>
       </body>
