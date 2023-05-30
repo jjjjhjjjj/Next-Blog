@@ -1,17 +1,26 @@
-import { getPosts, getPost } from "@/service/posts";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import PostContent from "@/components/PostContent";
+import { getPosts, getPostData } from "@/service/posts";
+import Image from "next/image";
 
 type Props = {
   params: { slug: string };
 };
 
-export default function Postpage({ params: { slug } }: Props) {
-  const post = getPost(slug);
+export default async function Postpage({ params: { slug } }: Props) {
+  const post = await getPostData(slug);
+  const { title, path } = post;
 
   return (
-    <div className="p-5">
-      <ReactMarkdown>{post}</ReactMarkdown>
-    </div>
+    <article className="rounded-2xl overflow-hidden bg-gray-100 shadow-lg m-4">
+      <Image
+        className="w-full h-1/5 max-h-[500px]"
+        src={`/images/posts/${path}.png`}
+        alt={title}
+        width={760}
+        height={400}
+      />
+      <PostContent post={post} />
+    </article>
   );
 }
 

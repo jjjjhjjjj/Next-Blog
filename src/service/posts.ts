@@ -1,5 +1,6 @@
 import path from "path";
-import fs, { promises } from "fs";
+import { promises } from "fs";
+import { readFile } from "fs/promises";
 
 export type Post = {
   title: string;
@@ -8,6 +9,10 @@ export type Post = {
   category: string;
   path: string;
   featured: boolean;
+};
+
+export type PostData = Post & {
+  content: string;
 };
 
 export async function getPosts(): Promise<Post[]> {
@@ -22,9 +27,18 @@ export async function getFeaturedPosts(): Promise<Post[]> {
   return posts;
 }
 
-export function getPost(postId: string) {
-  const postPath = path.join(process.cwd(), "data", "posts", `${postId}.md`);
-  const fileContents = fs.readFileSync(postPath, "utf8");
+export async function getPostData(fileName: string): Promise<PostData> {
+  const posts = await getPosts();
+  const post = posts.find((post) => post.path === fileName);
 
-  return fileContents;
+  const postPath = path.join(process.cwd(), "data", "posts", `${fileName}.md`);
+  const content = await readFile(postPath, "utf-8");
+
+  if (!post) throw new Error(`${fileName}에 해당하는 포스트를 찾을 수 없음`);
+
+  // const index = posts.indexOf(post);
+  // const next = index > 0 ? posts[index - 1] : null;
+  // const prev = index < posts.length ? posts[index + 1] : null;
+
+  return { ...post, content };
 }
