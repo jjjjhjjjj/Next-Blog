@@ -1,6 +1,11 @@
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
 import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 export default function ConatctPage() {
   return (

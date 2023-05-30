@@ -5,7 +5,10 @@ import Header from "@/components/Header";
 const sans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "My Blog",
+  title: {
+    default: "My Blog",
+    template: "%s | My Blog",
+  },
   description: "Study NEXT",
 };
 

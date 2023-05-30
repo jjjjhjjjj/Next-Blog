@@ -1,10 +1,17 @@
 import PostContent from "@/components/PostContent";
 import { getPosts, getPostData } from "@/service/posts";
+import { Metadata } from "next";
 import Image from "next/image";
 
 type Props = {
   params: { slug: string };
 };
+
+export function generateMetadata({ params: { slug } }: Props): Metadata {
+  return {
+    title: `Post - ${slug}`,
+  };
+}
 
 export default async function Postpage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
