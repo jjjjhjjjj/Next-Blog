@@ -2,12 +2,7 @@
 
 import { useState } from "react";
 import Banner, { BannerData } from "./Banner";
-
-type ContactFormData = {
-  email: string;
-  subject: string;
-  message: string;
-};
+import { ContactFormData, submitForm } from "@/service/contact";
 
 export default function ContactForm() {
   const [form, setForm] = useState<ContactFormData>(initForm);
@@ -33,6 +28,7 @@ export default function ContactForm() {
         setForm(initForm);
       })
       .catch((error) => {
+        console.error(error);
         setBanner({
           message: "메일전송에 실패했습니다. 다시 시도해 주세요",
           state: "error",
@@ -96,15 +92,3 @@ const initForm = {
   subject: "",
   message: "",
 };
-
-async function submitForm(formData: ContactFormData) {
-  const res = await fetch(`/api/contact`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  });
-
-  return res.json();
-}
