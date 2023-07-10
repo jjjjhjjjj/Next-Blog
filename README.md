@@ -5,7 +5,7 @@ Next.js를 사용한 Blog 만들기
 
 ## 사용한 기술
 
-- ![Nextjs Badge](https://img.shields.io/badge/NEXT.JS-000000?style=flat-square&logo=next.js&logoColor=white)
+- ![Nextjs Badge](https://img.shields.io/badge/NEXT.JS-000000?style=flat-square&logo=next.js&logoColor=white) ![TypeScript Badge](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=TypeScript&logoColor=white)
 
 ## 간단한 프로젝트 소개  
 
