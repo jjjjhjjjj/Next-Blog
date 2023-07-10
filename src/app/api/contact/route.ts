@@ -1,8 +1,21 @@
 import nodemailer from "nodemailer";
+import { object, string } from "yup";
+
+const contactSchema = object({
+  email: string().email(),
+  subject: string().required(),
+  message: string().required(),
+});
 
 export async function POST(res: Request) {
   const data = await res.json();
   const { email, subject, message } = data;
+
+  if (!contactSchema.isValidSync(data)) {
+    return new Response(JSON.stringify({ message: "fail" }), {
+      status: 400,
+    });
+  }
 
   const transporter = nodemailer.createTransport({
     service: "gmail",

@@ -20,11 +20,19 @@ export default function ContactForm() {
     e.preventDefault();
 
     submitForm(form)
-      .then(() => {
-        setBanner({
-          message: "메일을 성공적으로 보냈습니다.",
-          state: "success",
-        });
+      .then((res) => {
+        if (res.message === "success") {
+          setBanner({
+            message: "메일을 성공적으로 보냈습니다.",
+            state: "success",
+          });
+        } else {
+          setBanner({
+            message: "메일전송에 실패했습니다. 다시 시도해 주세요",
+            state: "error",
+          });
+        }
+
         setForm(initForm);
       })
       .catch((error) => {
