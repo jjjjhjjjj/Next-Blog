@@ -12,7 +12,7 @@ Next.js를 사용한 Blog 만들기
 - nodemailer를 활용한 contact 페이지 작업 및 yup로 유효성 검사
 - react-multi-carousel을 활용한 리스트 작업
 - react-markdown, react-syntax-highlighter, remark-gfm를 활용한 포스트 상세 페이지 작업
-- 
+  
 
 ## 프로젝트 화면
 - Main Page 
