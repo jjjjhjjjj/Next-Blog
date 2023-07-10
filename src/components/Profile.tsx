@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <article className="flex flex-col items-center ">
       <Image
-        src="/images/jordy2.png"
+        src="./images/jordy2.png"
         width={180}
         height={180}
         alt="Profile"

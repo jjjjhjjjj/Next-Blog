@@ -13,7 +13,7 @@ export default function PostItem({ post }: Props) {
     <div className="drop-shadow-2xl border hover:scale-105 transition duration-500 ease-in-out">
       <Link href={`/posts/${path}`}>
         <Image
-          src={`/images/posts/${path}.png`}
+          src={`./images/posts/${path}.png`}
           width={700}
           height={400}
           alt={path}
