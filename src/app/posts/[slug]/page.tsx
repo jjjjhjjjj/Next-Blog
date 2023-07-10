@@ -21,7 +21,7 @@ export default async function Postpage({ params: { slug } }: Props) {
     <article className="rounded-2xl overflow-hidden bg-gray-100 shadow-lg m-4">
       <Image
         className="w-full h-1/5 max-h-[500px]"
-        src={`./images/posts/${path}.png`}
+        src={`./../images/posts/${path}.png`}
         alt={title}
         width={760}
         height={400}
