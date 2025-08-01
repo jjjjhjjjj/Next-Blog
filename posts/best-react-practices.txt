@@ -1,0 +1,68 @@
+1:HL["/Next-Blog/_next/static/css/a6b0f5090278bf2d.css","style",{"crossOrigin":""}]
+0:["MDRsRsoFG-XUMdKrpMCLp",[[["",{"children":["posts",{"children":[["slug","best-react-practices","d"],{"children":["__PAGE__?{\"slug\":\"best-react-practices\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Next-Blog/_next/static/css/a6b0f5090278bf2d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:I[68326,["326","static/chunks/326-3700ca2d1f8167d5.js","413","static/chunks/413-219673a3d62c815d.js","931","static/chunks/app/page-76b9065730fe48db.js"],""]
+5:I[56954,[],""]
+6:I[7264,[],""]
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_b27d56 py-5 px-14","children":[["$","header",null,{"className":"flex justify-between items-center","children":[["$","h1",null,{"className":"text-2xl font-semibold","children":["$","$L4",null,{"href":"/index","children":"My blog"}]}],["$","nav",null,{"className":"text-xl","children":[["$","$L4","home",{"href":"/index","className":"px-2","children":"home"}],["$","$L4","about",{"href":"/about","className":"px-2","children":"about"}],["$","$L4","posts",{"href":"/posts","className":"px-2","children":"posts"}],["$","$L4","contact",{"href":"/contact","className":"px-2","children":"contact"}]]}]]}],["$","section",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","posts","children",["slug","best-react-practices","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L7","$L8",null],"segment":"__PAGE__?{\"slug\":\"best-react-practices\"}"},"styles":[]}],"segment":["slug","best-react-practices","d"]},"styles":[]}],"segment":"posts"},"styles":[]}]}]]}]}],null]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Post - best-react-practices | My Blog"}],["$","meta","2",{"name":"description","content":"Study NEXT"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/Next-Blog/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+7:null
+9:I[90413,["413","static/chunks/413-219673a3d62c815d.js","502","static/chunks/502-1f1c43d7364cffc6.js","333","static/chunks/app/posts/%5Bslug%5D/page-4bfc27986189cee4.js"],"Image"]
+a:I[34481,["413","static/chunks/413-219673a3d62c815d.js","502","static/chunks/502-1f1c43d7364cffc6.js","333","static/chunks/app/posts/%5Bslug%5D/page-4bfc27986189cee4.js"],""]
+b:T127a,React is a JavaScript library for building user interfaces.
+
+## A Simple Component
+
+React components implement a `render()` method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by `render()` via `this.props`.
+
+```jsx
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
+}
+
+root.render(<HelloMessage name='Taylor' />);
+```
+
+## Declarative
+
+React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
+A paragraph with _emphasis_ and **strong importance**.
+
+> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+
+- Lists
+- [ ] todo
+- [x] done
+
+## Component-Based
+
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+
+## Learn Once, Write Anywhere
+
+We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
+
+React can also render on the server using Node and power mobile apps using React Native.
+
+![React Office desk](https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+
+> The most important addition in React 18 is something we hope you never have to think about: concurrency. We think this is largely true for application developers, though the story may be a bit more complicated for library maintainers.
+
+Concurrency is not a feature, per se. It’s a new behind-the-scenes mechanism that enables React to prepare multiple versions of your UI at the same time. You can think of concurrency as an implementation detail — it’s valuable because of the features that it unlocks. React uses sophisticated techniques in its internal implementation, like priority queues and multiple buffering. But you won’t see those concepts anywhere in our public APIs.
+
+When we design APIs, we try to hide implementation details from developers. As a React developer, you focus on what you want the user experience to look like, and React handles how to deliver that experience. So we don’t expect React developers to know how concurrency works under the hood.
+
+However, Concurrent React is more important than a typical implementation detail — it’s a foundational update to React’s core rendering model. So while it’s not super important to know how concurrency works, it may be worth knowing what it is at a high level.
+
+A key property of Concurrent React is that rendering is interruptible. When you first upgrade to React 18, before adding any concurrent features, updates are rendered the same as in previous versions of React — in a single, uninterrupted, synchronous transaction. With synchronous rendering, once an update starts rendering, nothing can interrupt it until the user can see the result on screen.
+
+In a concurrent render, this is not always the case. React may start rendering an update, pause in the middle, then continue later. It may even abandon an in-progress render altogether. React guarantees that the UI will appear consistent even if a render is interrupted. To do this, it waits to perform DOM mutations until the end, once the entire tree has been evaluated. With this capability, React can prepare new screens in the background without blocking the main thread. This means the UI can respond immediately to user input even if it’s in the middle of a large rendering task, creating a fluid user experience.
+
+Another example is reusable state. Concurrent React can remove sections of the UI from the screen, then add them back later while reusing the previous state. For example, when a user tabs away from a screen and back, React should be able to restore the previous screen in the same state it was in before. In an upcoming minor, we’re planning to add a new component called `<Offscreen>` that implements this pattern. Similarly, you’ll be able to use Offscreen to prepare new UI in the background so that it’s ready before the user reveals it.
+
+Concurrent rendering is a powerful new tool in React and most of our new features are built to take advantage of it, including Suspense, transitions, and streaming server rendering. But React 18 is just the beginning of what we aim to build on this new foundation.
+8:["$","article",null,{"className":"rounded-2xl overflow-hidden bg-gray-100 shadow-lg m-4","children":[["$","$L9",null,{"className":"w-full h-1/5 max-h-[500px]","src":"./../images/posts/best-react-practices.png","alt":"리액트 Best Practice!","width":760,"height":400}],["$","section",null,{"className":"flex flex-col p-4 w-full","children":[["$","div",null,{"className":"flex items-center self-end text-sky-600","children":[["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 1024 1024","children":["$undefined",[["$","path","0",{"fill":"#D9D9D9","d":"M712 304c0 4.4-3.6 8-8 8h-56c-4.4 0-8-3.6-8-8v-48H384v48c0 4.4-3.6 8-8 8h-56c-4.4 0-8-3.6-8-8v-48H184v136h656V256H712v48z","children":"$undefined"}],["$","path","1",{"d":"M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zm0-448H184V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136z","children":"$undefined"}]]],"className":"$undefined","style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}],["$","p",null,{"className":"font-semibold ml-2","children":"2023-04-15"}]]}],["$","h1",null,{"className":"text-4xl font-bold","children":"리액트 Best Practice!"}],["$","p",null,{"className":"text-xl font-bold mt-2","children":"리액트를 정확하게 사용하는 방법들을 정리"}],["$","div",null,{"className":"w-full border-2 border-sky-600 mt-2 mb-8"}],["$","$La",null,{"content":"$b"}]]}]]}]
