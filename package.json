@@ -1,12 +1,14 @@
 {
   "name": "my-blog__study",
+  "homepage": "https://jjjjhjjjj.github.io/Next-Blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@types/node": "20.2.3",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "@types/nodemailer": "^6.4.8"
+    "@types/nodemailer": "^6.4.8",
+    "gh-pages": "^6.3.0"
   }
 }
